@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Slick Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!-- Slick Slider JS and its dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+
+  <title>you are a Local hero</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Gotu|Libre+Franklin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+
+<body class="text-gray-800 antialiased" onload="startTimer();animate9()">
+
+  <!-- Navbar -->
+  <div class="main h-12 w-full mb-6 z-50 fixed">
+    <ul id="boy3" class="font-bold opacity-0 bg-gray-300">
+      <li class="inline-block mr-10">
+        <a
+          class="text-lg font-bold leading-relaxed inline-block py-2 whitespace-nowrap uppercase text-green-600 pl-6 transition duration-500 ease-in-out transform hover:scale-110">ASfaare</a>
+      </li>
+      <ul class="pt-2 p-3 inline-block">
+        <!-- Navigation Item - Destination -->
+        <li class="inline-block relative group">
+          <a
+            class="px-2 text-gray-500 rounded-sm hover:bg-green-600 hover:text-white text-sm mr-0 p-2 cursor-pointer">Destination</a>
+
+          <!-- Dropdown Menu -->
+          <div style="width: 100vw; left: 0;"
+            class="absolute top-full bg-white shadow-xl overflow-hidden z-10 hidden group-hover:block">
+            <div class="flex p-4 hover:block"> <!-- Use justify-around for even spacing between columns -->
+
+              <!-- Column 1: Moyen Atlas -->
+              <div class="flex flex-row mx-6"> <!-- Use space-x-6 for spacing between image and text -->
+                <img src="test.jpg" alt="Moyen Atlas Image" class="mr-6 rounded-md w-64 h-64">
+                <div>
+                  <h4>Moyen Atlas</h4>
+                  <ul>
+                    <li class="font-thin">Boulemane</li>
+                    <li class="font-thin">Taza</li>
+                    <li class="font-thin">Fés</li>
+                    <li class="font-thin">Ifrane</li>
+                    <li class="font-thin">Sefrou</li>
+                    <li class="font-thin">Tounate</li>
+                    <li class="font-thin">Méknes</li>
+                    <li class="font-thin">El hajeb </li>
+                    <!-- ... other items ... -->
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Column 2: Haut Atlas -->
+              <div class="flex flex-row mx-6">
+                <img src="high atlas.jpg" alt="Haut Atlas Image" class="mr-6 rounded-md w-64 h-64">
+                <div>
+                  <h4>Haut Atlas</h4>
+                  <ul>
+                    <li class="font-thin">...</li>
+                    <li class="font-thin">...</li>
+                    <!-- ... other items ... -->
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Column 3: Sample (You might want to change this) -->
+              <div class="flex flex-row mx-6">
+                <img src="Anti atlas.jpg" alt="Anti-Atlas Image" class="mr-6 rounded-md w-64 h-64">
+                <div>
+                  <h4>Anti-Atlas</h4>
+                  <ul>
+                    <li class="font-thin">...</li>
+                    <li class="font-thin">...</li>
+                    <!-- ... other items ... -->
+                  </ul>
+                </div>
+              </div>
+
+              <!-- ... Repeat for other columns ... -->
+            </div>
+          </div>
+        </li>
+
+
+        <li class="inline-block relative group">
+          <a class="px-2 text-gray-500 rounded-sm hover:bg-green-600 hover:text-white text-sm mr-0 p-2 cursor-pointer">Type
+            De Voyages</a>
+          <!-- Dropdown Menu -->
+          <div
+            class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl overflow-hidden z-10 hidden group-hover:block">
+            <ul>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="solid.png" class="w-8 h-8 rounded-full mr-3">
+                    Action solidaire
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="nomad.png" class="w-8 h-8 rounded-full mr-3">
+                    Vie Nomad
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="envir.png" class="w-8 h-8 rounded-full mr-3">
+                    Protection de l'environement
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="nature.png" class="w-8 h-8 rounded-full mr-3">
+                    Nature & aventure
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="anim.png" class="w-8 h-8 rounded-full mr-3">
+                    Vie animal
+                  </div>
+                </a>
+              </li>
+              <!-- ... repeat for other dropdown items ... -->
+            </ul>
+          </div>
+        </li>
+        <li class="inline-block relative group">
+          <a
+            class="px-2 text-gray-500 rounded-sm hover:bg-green-600 hover:text-white text-sm mr-0 p-2 cursor-pointer">Activités</a>
+          <!-- Dropdown Menu -->
+          <div
+            class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl overflow-hidden z-10 hidden group-hover:block">
+            <ul>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="rondo.png" class="w-8 h-8 rounded-full mr-3">
+                    Rondonnée
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="velo.png" class="w-8 h-8 rounded-full mr-3">
+                    Vélo
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="nature.png" class="w-8 h-8 rounded-full mr-3">
+                    Voyage Nature
+                  </div>
+                </a>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="trail.png" class="w-8 h-8 rounded-full mr-3">
+                    trail
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="multi.png" class="w-8 h-8 rounded-full mr-3">
+                    Multi-activité
+                  </div>
+                </a>
+              </li>
+              <!-- ... repeat for other dropdown items ... -->
+            </ul>
+          </div>
+        </li>
+
+        <li class="inline-block relative group">
+          <a class="px-2 text-gray-500 rounded-sm hover:bg-green-600 hover:text-white text-sm mr-0 p-2 cursor-pointer">RFM
+            actualités</a>
+          <!-- Dropdown Menu -->
+          <div
+            class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-xl overflow-hidden z-10 hidden group-hover:block">
+            <ul>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="4.png" class="w-8 h-8 rounded-full mr-3">
+                    Historique
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="5.png" class="w-8 h-8 rounded-full mr-3">
+                    Culturelle
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.doublesens.fr/26-action-solidaire" class="block px-4 py-2 hover:bg-gray-200">
+                  <div class="flex items-center">
+                    <img src="6.png" class="w-8 h-8 rounded-full mr-3">
+                    Cultuelle
+                  </div>
+                </a>
+              </li>
+              <!-- ... repeat for other dropdown items ... -->
+            </ul>
+          </div>
+        </li>
+        <li class="inline-block relative group">
+          <a class="px-2 text-gray-500 rounded-sm hover:bg-green-600 hover:text-white text-sm mr-0 p-2 cursor-pointer"
+            href="Faq.html">FAQ?</a>
+        </li>
+        <li class="inline-block relative group">
+           <a class=""px-2 text-gray-500 rounded-sm hover:bg-green-600 hover:text-white text-sm mr-0 p-2 cursor-pointer"
+           href="chatbot.html"> ASK Ai </a>"
+        </li>
+      </ul>
+      <ul class="inline-block float-right">
+
+        <li class="inline-block pr-6">
+          <a
+            class="text-lg font-bold leading-relaxed inline-block py-2 whitespace-nowrap uppercase text-green-800 pl-6 transition duration-500 ease-in-out transform hover:scale-110">0698015761
+          </a>
+        </li>
+        <li class="inline-block pr-6 bg-green-900 rounded-lg transition duration-500 ease-in-out transform ">
+          <a class="text-md font-bold leading-relaxed inline-block py-2 whitespace-nowrap uppercase text-white pl-6 transition duration-500 ease-in-out transform   "
+            href="">Register</a>
+        </li>
+      </ul>
+
+    </ul>
+  </div>
+
+
+  <!-- Main Content -->
+  <main>
+    <div class="relative pt-56 pb-32 content-center items-center justify-center bg-black" style="min-height: 105vh;">
+      <div class="slider">
+        <!-- Slider items -->
+        <div class="item">
+          <div id="imagess" class="absolute top-0 w-full h-full bg-center bg-cover bg-black z-20"
+            style='background-image: url(03-moroccan-desert-mountains.jpg);'>
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black"></span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div id="imagess" class="absolute top-0 w-full h-full bg-center bg-cover bg-black z-20"
+            style='background-image: url(sahara.jpg);'>
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black"></span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div id="imagess" class="absolute top-0 w-full h-full bg-center bg-cover bg-black z-20"
+            style='background-image: url(warzazat.jpg);'>
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black"></span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div id="imagess" class="absolute top-0 w-full h-full bg-center bg-cover bg-black z-20"
+            style='background-image: url(shefchawen.webp);'>
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black "></span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div id="imagess" class="absolute top-0 w-full h-full bg-center bg-cover bg-black z-20"
+            style='background-image: url(toubkal.jpg);'>
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black"></span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div id="imagess" class="absolute top-0 w-full h-full bg-center bg-cover bg-black z-20"
+            style='background-image: url(imesouane.jpg);'>
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black"></span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div id="imagess" class="absolute top-0 w-full h-full bg-center bg-cover bg-black z-20"
+            style='background-image: url(marrakech.avif);'>
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container -->
+      <div class="container relative mx-auto mt-36">
+        <div class="items-center flex flex-wrap justify-center">
+          <div class="w-11/12 lg:w-11/12 px-4 text-center">
+            <div id="bobobo" class="flex flex-col opacity-0 mb-4">
+              <h1 class="text-white font-extrabold text-6xl">
+                PARTEZ POUR UN VOYAGE QUI A DU SENS
+              </h1>
+            </div>
+
+            <!-- Container for Search and Buttons -->
+            <div class="flex items-center justify-center">
+
+              <!-- Search Form -->
+              <form id="input1" class="opacity-0 flex-grow relative mr-4 pt-7">
+                <label for="search"
+                  class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                  </div>
+                  <input type="search" id="search"
+                    class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-green-600 focus:border-green-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-600 dark:focus:border-green-600"
+                    placeholder="Search" required>
+                  <button type="submit"
+                    class="text-white absolute right-2.5 bottom-2.5 bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Search</button>
+                </div>
+              </form>
+
+              <!-- Buttons -->
+              <button id="btn1" href="contact3 (1).html/#div0"
+                class="font-semibold bg-transparent rounded-3xl border-white text-gray-100 border-2 px-5 py-3 mt-7 text-lg  hover:bg-green-600 hover:border-green-600 transition delay-150 duration-300 ease-in-out mr-3 opacity-0">Budget</button>
+              <button id="btn2"
+                class="font-semibold bg-transparent rounded-3xl border-green-600 text-green-600 border-2 px-5 py-3 mt-7 text-lg hover:bg-white hover:border-white transition delay-150 duration-300 ease-in-out opacity-0">165
+                Voyages</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <section class="pb-20 bg-green-900">
+      <div class="container mx-auto px-4 -mt-20">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <!-- Card 1 -->
+          <div class="pt-6 px-4 text-center">
+            <div
+              class="h-64 relative flex flex-col min-w-0 break-words bg-white shadow-lg rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+              <div class="px-4 py-5 flex-auto">
+                <img src="nomad.png" class="inline-flex items-center justify-center h-12 mb-5">
+                <h6 class="text-xl font-semibold">
+                  <a href="#" class="hover:text-yellow-500">Une agence d'expérience</a>
+                </h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Près de 3 ans d'engagement dans le tourisme durable </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <!-- ... Similar to Card 1 ... -->
+          <div class="pt-6 px-4 text-center">
+            <div
+              class="h-64 relative flex flex-col min-w-0 break-words bg-white shadow-lg rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+              <div class="px-4 py-5 flex-auto">
+                <img src="solid.png" class="inline-flex items-center justify-center h-12 mb-5">
+                <h6 class="text-xl font-semibold">
+                  <a href="#" class="hover:text-yellow-500">Un réel impact local</a>
+                </h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Retombées économiques partagées
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <!-- ... Similar to Card 1 ... -->
+          <div class="pt-6 px-4 text-center">
+            <div
+              class="h-64 relative flex flex-col min-w-0 break-words bg-white shadow-lg rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+              <div class="px-4 py-5 flex-auto">
+                <img src="envir.png" class="inline-flex items-center justify-center h-12 mb-5">
+                <h6 class="text-xl font-semibold">
+                  <a href="#" class="hover:text-yellow-500">Une Action concrète pour la planète</a>
+                </h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Des Voyages Responsables
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <!-- ... Similar to Card 1 ... -->
+          <div class="pt-6 px-4 text-center">
+            <div
+              class="h-64 relative flex flex-col min-w-0 break-words bg-white shadow-lg rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+              <div class="px-4 py-5 flex-auto">
+                <img src="nature.png" class="inline-flex items-center justify-center h-12 mb-5">
+                <h6 class="text-xl font-semibold">
+                  <a href="#" class="hover:text-yellow-500">Asfaare</a>
+                </h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Explore Morocco’s magic with ASfaare! We craft unforgettable journeys through stunning landscapes and
+                  vibrant cultures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <section class="relative py-20">
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px;">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+
+      <div class="relative text-4xl font-bold text-center">
+        <h1>Rejoignez nous</h1>
+        <img src="underlign-orange.png" alt="Decoration" class="mx-auto mt-2 w-auto">
+        <!-- Adjust w-16 as per your image's desired width -->
+      </div>
+
+      <div class="slick-slider m-10">
+        <div class="flex-none w-1/4 relative m-4 rounded-lg shadow-lg">
+          <img src="bouib.jpg" alt="Bénin Image" class="rounded-lg">
+
+          <!-- Overlay badge -->
+
+          <!-- Departures info -->
+
+
+          <div class="absolute bottom-0 bg-white p-4 rounded-b-lg w-full">
+            <h3>BOUIBLANE</h3>
+            <p>Les paradis oubliés</p>
+            <p>Départ le 03/01/2024</p>
+            <p class="float-right">👤 6 inscrits</p>
+            <p class="float-right">1500 DH </p>
+            <p>4 jours</p>
+          </div>
+        </div>
+        <div class="flex-none w-1/4 relative m-4 rounded-lg shadow-lg">
+          <img src="berger.png" alt="Bénin Image" class="rounded-lg">
+
+          <!-- Overlay badge -->
+
+          <!-- Departures info -->
+
+
+          <div class="absolute bottom-0 bg-white p-4 rounded-b-lg w-full">
+            <h3>TABHIRT </h3>
+            <p>Le petit berger</p>
+            <p>Départ le 06/30/2024</p>
+            <p class="float-right">👤 2 inscrits</p>
+            <p class="float-right">1290 dh </p>
+            <p>9 jours</p>
+          </div>
+        </div>
+        <div class="flex-none w-1/4 relative m-4 rounded-lg shadow-lg">
+          <img src="tafr.png" alt="Bénin Image" class="rounded-lg">
+
+          <!-- Overlay badge -->
+
+          <!-- Departures info -->
+
+
+          <div class="absolute bottom-0 bg-white p-4 rounded-b-lg w-full">
+            <h3>TAFERDOUST</h3>
+            <p>En 2 roues entre mer et lagune</p>
+            <p>Depart le 25/10/2024</p>
+            <p class="float-right">👤 10 inscrits</p>
+            <p class="float-right">450 dh </p>
+            <p>Voyager avec un objectif social et une approche responsable</p>
+          </div>
+        </div>
+        <div class="flex-none w-1/4 relative m-4 rounded-lg shadow-lg">
+          <img src="missour.png" alt="Bénin Image" class="rounded-lg">
+
+          <!-- Overlay badge -->
+
+          <!-- Departures info -->
+
+
+          <div class="absolute bottom-0 bg-white p-4 rounded-b-lg w-full">
+            <h3>MISSOUR</h3>
+            <p>Expérience chez l'habitant en tant que berger, à observer les chameaux dans le désert de Missour</p>
+            <p>Départ le 05/11/2024</p>
+            <p class="float-right">👤 2 inscrits</p>
+            <p class="float-right">1290 dh </p>
+            <p>9 jours</p>
+          </div>
+        </div>
+        <!-- ... more cards ... -->
+      </div>
+
+
+      <div id="div1" class="flex flex-row items-center justify-center bg-gray-100 divide-x mb-8 mr-12 ml-12">
+        <div class="p-20 justify-center items-center flex flex-row">
+          <p>Voyage complet&nbsp;</p>
+          <h1 id="value1" class="font-black text-5xl ">100</h1>
+        </div>
+        <div class="p-20 justify-center items-center flex flex-row ">
+          <p>Experiences&nbsp;</p>
+          <h1 id="value2" class="font-black text-5xl">100</h1>
+        </div>
+        <div class="p-20 justify-center items-center flex flex-row">
+          <p>client satisified&nbsp;</p>
+          <h1 id="value3" class="font-black text-5xl">100</h1>
+        </div>
+
+      </div>
+
+      <div class="relative text-4xl font-bold text-center">
+        <h1>Evenement sociale</h1>
+        <img src="underlign-orange.png" alt="Decoration" class="mx-auto mt-2 w-auto">
+        <!-- Adjust w-16 as per your image's desired width -->
+      </div>
+      </div>
+      <div style="height: 80vh;" class="justify-between flex flex-row m-10">
+
+
+        <div class="flex-none w-1/3 relative m-4 rounded-lg shadow-lg">
+          <img src="Festival.jpg" alt="Bénin Image" class="rounded-lg w-full h-1/2">
+
+          <!-- Overlay badge -->
+
+          <!-- Departures info -->
+          <div class="absolute top-4 right-4 bg-white p-2 rounded-lg shadow-md">
+            <span>20 places</span>
+          </div>
+
+          <div class="absolute bottom-0 bg-white p-4 rounded-b-lg w-full">
+            <h3>Festival International du Film de Marrakech</h3>
+            <p>Cinématographique</p>
+            <p>Debut le 30/11/2024</p>
+            <p class="float-right">👤 15 inscrits</p>
+            <p class="float-right">600 dh </p>
+            </br>
+            <p>
+              Le Festival International du Film de Marrakech est l'un des événements cinématographiques les plus
+              prestigieux d'Afrique. Chaque année, il accueille des cinéastes et des acteurs du monde entier pour des
+              projections, des hommages et des ateliers. C'est une occasion unique de découvrir des films en
+              avant-première et de rencontrer les stars du cinéma
+            </p>
+          </div>
+        </div>
+        <div class="flex-none w-1/3 relative m-4 rounded-lg shadow-lg">
+          <img src="gnawa.webp" alt="Bénin Image" class="rounded-lg w-full h-1/2">
+
+          <!-- Overlay badge -->
+
+          <!-- Departures info -->
+          <div class="absolute top-4 right-4 bg-white p-2 rounded-lg shadow-md">
+            <span>23 départs</span>
+          </div>
+
+          <div class="absolute bottom-0 bg-white p-4 rounded-b-lg w-full">
+            <h3>Festival Gnaoua et Musiques du Monde</h3>
+            <p>Musical</p>
+            <p>Début le 21/06/2024</p>
+            <p class="float-right">👤 10 inscrits</p>
+            <p class="float-right"> 500 dh </p>
+            </br>
+            <p>Le Festival Gnaoua et Musiques du Monde à Essaouira célèbre la musique gnaouie et les rythmes du monde
+              entier. Pendant quatre jours, la ville vibre au son des concerts, des jam sessions et des rencontres
+              musicales. Découvrez un programme éclectique avec des artistes locaux et internationaux.</p>
+          </div>
+        </div>
+        <div class="flex-none w-1/3 relative m-4 rounded-lg shadow-lg">
+          <img src="sourise.jpg" alt="Bénin Image" class="rounded-lg w-full h-1/2">
+
+          <!-- Overlay badge -->
+
+          <!-- Departures info -->
+          <div class="absolute top-4 right-4 bg-white p-2 rounded-lg shadow-md">
+            <span>23 départs</span>
+          </div>
+
+          <div class="absolute bottom-0 bg-white p-4 rounded-b-lg w-full">
+            <h3>Fête des Cerises de Sefrou 2024</h3>
+            <p>Culturel</p>
+            <p>
+              Début le 14/06/2024</p>
+            <p class="float-right">👤 8 inscrits</p>
+            <p class="float-right">300 dh </p>
+            </br>
+            <p>a Fête des Cerises de Sefrou est une célébration colorée de la récolte des cerises, marquée par des
+              parades, des danses traditionnelles et des concours de beauté. Ce festival met en valeur les traditions
+              locales et offre une expérience immersive dans la culture marocaine</p>
+          </div>
+        </div>
+        <!-- ... more cards ... -->
+      </div>
+  </main>
+
+
+  <script>
+    $(document).ready(function () {
+      $('.slick-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+  <!-- Slider Scripts -->
+  <script>
+    // Slider scripts go here
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+
+    function nextSlide() {
+      showSlides(slideIndex += 1);
+    }
+
+
+    function previousSlide() {
+      showSlides(slideIndex -= 1);
+    }
+
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function startTimer() {
+      setInterval(nextSlide, 6700);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("item");
+
+
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+
+
+      for (let slide of slides) {
+        slide.style.display = "none";
+
+      }
+      slides[slideIndex - 1].style.display = "block";
+      slides[slideIndex - 1].classList.add("fadein")
+    }
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+
+    var n = 0;
+    var element = document.getElementById("div1");
+    var titrewelcome = document.getElementById("div2");
+    var div2 = document.getElementById("div3");
+    var div3 = document.getElementById("boy4");
+    const tiltle1 = document.getElementById("bobobo");
+    const btn1 = document.getElementById("btn1");
+    const btn2 = document.getElementById("btn2");
+    const input1 = document.getElementById("input1")
+    const btns = document.getElementById("boy3");
+    function animate9() {
+      setTimeout(animate10, 1000);
+      setTimeout(animate11, 1000);
+      setTimeout(animate12, 1000);
+      setTimeout(animate00, 1000)
+
+    }
+    function animate10() {
+      tiltle1.classList.remove("opacity-0");
+      tiltle1.classList.add("fadeout");
+    }
+    function animate11() {
+      btn1.classList.remove("opacity-0");
+      btn1.classList.add("fade-in-right");
+      btn2.classList.remove("opacity-0");
+      btn2.classList.add("fade-in-left");
+    }
+    function animate12() {
+      btns.classList.remove("opacity-0");
+      btns.classList.add("fade-in-top");
+    }
+    function animate00() {
+      input1.classList.remove("opacity-0");
+      input1.classList.add("fade-in-right");
+    }
+
+
+    document.addEventListener('scroll', animate);
+    document.addEventListener('scroll', animate2);
+    document.addEventListener('scroll', animate3);
+    document.addEventListener('scroll', animate4);
+
+    function inView(item) {
+
+      var windowHeight = window.innerHeight;
+
+      var scrollY = window.scrollY || window.pageYOffset;
+
+
+      var scrollPosition = scrollY + windowHeight;
+
+      var elementPosition = item.getBoundingClientRect().top + scrollY + element.clientHeight;
+
+
+      if (scrollPosition > elementPosition) {
+        return true;
+      }
+
+      return false;
+    }
+    function animateValue(obj, start, end, duration, ajout) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start) + ajout;
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+    const imagg = document.getElementById("imagess")
+    const obj = document.getElementById("value1");
+    const obj1 = document.getElementById("value2");
+    const obj2 = document.getElementById("value3");
+    const obj3 = document.getElementById("value4");
+    function animate() {
+
+      if (inView(element) && n === 0) {
+
+        animateValue(obj, 0, 500, 1000, "+");
+        animateValue(obj1, 0, 183, 1000, "");
+        animateValue(obj2, 0, 4900, 1000, "+");
+        animateValue(obj3, 0, 2586, 1000, "");
+        n++;
+      }
+
+    }
+    function animate2() {
+      if (inView(titrewelcome)) {
+        titrewelcome.classList.remove("opacity-0");
+        titrewelcome.classList.add("fade-in-left");
+
+      }
+    }
+    function animate4() {
+      if (inView(div2)) {
+        div2.classList.remove("opacity-0");
+        div2.classList.add("fade-in-right")
+      };
+    }
+    function animate3() {
+      if (inView(div3)) {
+        div3.classList.remove("opacity-0");
+        div3.classList.add("fade-in-top")
+      };
+    }
+  </script>
+
+
+  <!-- Additional CSS -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+    .fadeout {
+      animation-name: topFadeOut;
+      animation-duration: 1s;
+      top: 5%;
+    }
+
+    .fadein {
+      -webkit-animation-name: fadein;
+      -webkit-animation-duration: 7s;
+      animation-name: fadein;
+      animation-duration: 7s;
+    }
+
+    .fade-in-left {
+      animation: fadeinleft 700ms ease-in-out;
+    }
+
+    .fade-in-right {
+      animation: fadeinright 700ms ease-in-out;
+    }
+
+    .fade-in-top {
+      animation: fadeintop 700ms ease-in-out;
+    }
+
+    @keyframes fadeinleft {
+      0% {
+        opacity: 0;
+        transform: translateX(5%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0%);
+      }
+    }
+
+    @keyframes fadeinright {
+      0% {
+        opacity: 0;
+        transform: translateX(-5%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0%);
+      }
+    }
+
+    @keyframes fadeintop {
+      0% {
+        opacity: 0;
+        transform: translateY(-20%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+
+
+    @-webkit-keyframes fadein {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
+
+      100% {
+        opacity: 0;
+
+      }
+    }
+
+    @keyframes fadein {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
+
+      100% {
+        opacity: 0;
+
+      }
+    }
+
+    .box {
+      height: 20rem;
+      overflow: hidden;
+      position: relative;
+    }
+
+    @keyframes topFadeOut {
+      0% {
+
+        top: 10%;
+        opacity: 0;
+      }
+
+      100% {
+
+        top: 0;
+        opacity: 1;
+      }
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    .main {
+
+
+      font-family: 'Gotu', sans-serif;
+    }
+
+    @keyframes slowpan {
+      0% {
+        transform: scale(1);
+      }
+
+      100% {
+        transform: scale(1.01);
+      }
+
+    }
+  </style>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  
+  
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Gotu|Libre+Franklin&display=swap" rel="stylesheet">
+
+  <!--egrg-->
+
+
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+  <title>you are a Local hero</title>
+</head>
+
+<body class="text-gray-800 antialiased"  onload = "startTimer();animate9()">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+ 
+  <div class="main h-12 w-full mb-6 z-50 fixed">
+		
+			<ul id="boy3" class="mt-2.5 mr-4 font-bold opacity-0">
+				<li class="inline-block "><a class="text-lg font-bold leading-relaxed inline-block  py-2 whitespace-nowrap uppercase text-blue-500 pl-6 transition duration-500 ease-in-out transform hover:scale-110">Local
+					hero</a></li>
+          <ul  class="float-right pt-2 ">
+				<li class="inline-block "><a
+						class="px-2 text-gray-500 rounded-sm  hover:bg-blue-500 hover:text-white text-sm mr-0 p-2 "
+						href="landing (3).html">Home</a></li>
+				<li class="inline-block "><a
+						class="px-2 text-gray-500 rounded-sm hover:bg-blue-500 hover:text-white text-sm  mr-0 p-2 "
+						href="#">Services</a></li>
+				<li class="inline-block "><a
+						class="px-2 text-gray-500 rounded-sm hover:bg-blue-500 hover:text-white text-sm  mr-0 p-2 "
+						href="#div2">About Us</a></li>
+				<li class="inline-block "><a
+						class="px-2 text-gray-500 rounded-sm hover:bg-blue-500 hover:text-white text-sm  mr-0 p-2 "
+						href="contact3 (1).html">Contact</a></li>
+        </ul>
+			</ul>
+	</div>
+  <!--main area-->
+  <main>
+    <div class="relative pt-56 pb-32 content-center items-center justify-center bg-black" style="min-height: 105vh;">
+
+     
+      <div class="slider " >
+
+        <div class="item " >
+          <div id="imagess" class=" absolute top-0 w-full h-full bg-center bg-cover bg-black z-20" style='background-image: url(flag1.jpg);'>
+        
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black"></span>
+          </div>
+
+        </div>
+        <div class="item " >
+          <div id="imagess" class=" absolute top-0 w-full h-full bg-center bg-cover bg-black z-20" style='background-image: url(flag2.jpg);'>
+        
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black"></span>
+          </div>
+
+        </div>
+        
+        
+        <div class="item " >
+          <div id="imagess" class=" absolute top-0 w-full h-full bg-center bg-cover bg-black z-20" style='background-image: url(pales8.jpg);'>
+        
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black"></span>
+          </div>
+
+        </div>
+
+        <div class="item " >
+          <div id="imagess" class=" absolute top-0 w-full h-full bg-center bg-cover bg-black z-20" style='background-image: url(DSC5736_2-edit.jpg);'>
+        
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black "></span>
+          </div>
+
+
+        </div>
+        <div class="item " >
+          <div id="imagess" class=" absolute top-0 w-full h-full bg-center bg-cover bg-black z-20" style='background-image: url(arriere2.jpg);'>
+        
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black"></span>
+          </div>
+
+
+        
+      
+
+
+        </div>
+        <div class="item " >
+          <div id="imagess" class=" absolute top-0 w-full h-full bg-center bg-cover bg-black z-20" style='background-image: url(arriere3.jpg);'>
+        
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black"></span>
+          </div>
+        </div>
+
+        
+        <div class="item " >
+          <div id="imagess" class=" absolute top-0 w-full h-full bg-center bg-cover bg-black z-20" style='background-image: url(arriere.jpg);'>
+        
+            <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-black"></span>
+          </div>
+
+
+        </div>
+
+
+       </div>
+
+
+        <script>
+
+                          let slideIndex = 1;
+                          showSlides(slideIndex);
+
+
+                        function nextSlide() {
+                            showSlides(slideIndex += 1);
+                        }
+
+
+                        function previousSlide() {
+                            showSlides(slideIndex -= 1);  
+                        }
+
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+                        function startTimer() {
+                                    setInterval(nextSlide, 6700);
+                                  }
+
+                        function showSlides(n) {
+                            let i;
+                            let slides = document.getElementsByClassName("item");
+                            
+                            
+                            if (n > slides.length) {
+                              slideIndex = 1
+                            }
+                            if (n < 1) {
+                                slideIndex = slides.length
+                            }
+                          
+                          
+                            for (let slide of slides) {
+                                slide.style.display = "none";
+                               
+                            }   
+                            slides[slideIndex - 1].style.display = "block"; 
+                            slides[slideIndex - 1].classList.add("fadein")
+                        }
+        </script>
+       <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap justify-center ">
+            <div class="w-10/12 lg:w-10/12 px-4 ml-auto mr-auto text-center ">
+              <div id="bobobo" class="pr-12 flex flex-col opacity-0 ">
+                <h1 class="text-white font-extrabold text-8xl overflow-clip ">
+                  NO one has ever become poor by giving .
+                </h1>
+                <p class="mt-4 text-2xl text-blue-500 font-semibold pt-5">
+                  Palestinians need your urgent help to survive.<br>Donate now make a difference ,be a LOCAL
+                  HERO .
+                </p>
+              </div>
+              <button id="btn1" href="contact3 (1).html/#div0"
+                class="font-semibold bg-transparent rounded-3xl border-white text-gray-100 border-2 px-5 py-3 mt-7 text-lg  hover:bg-blue-500 hover:border-blue-500 transition delay-150 duration-300 ease-in-out mr-3 opacity-0">Donate</button>
+              <button id="btn2"
+                class="font-semibold bg-transparent rounded-3xl border-blue-500 text-blue-500 border-2 px-5 py-3 mt-7 text-lg hover:bg-white hover:border-white transition delay-150 duration-300 ease-in-out opacity-0">Become
+                a volunteer</button>
+              </br>
+              <div class="pt-24 pr-4" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+  
+      </div>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+    .fadeout{
+      animation-name: topFadeOut;
+  animation-duration: 1s;
+  top: 5%;
+    }
+  .fadein {
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: 7s;
+  animation-name: fadein;
+  animation-duration: 7s;
+}
+        .fade-in-left {
+	  animation: fadeinleft 1000ms ease-in-out;
+}
+.fade-in-right{
+  animation: fadeinright 1000ms ease-in-out;
+}
+.fade-in-top{
+  animation: fadeintop 1000ms ease-in-out;
+}
+
+@keyframes fadeinleft {
+    0%{ 
+    opacity: 0;
+    transform: translateX(5%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes fadeinright {
+    0%{ 
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes fadeintop {
+    0%{ 
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+@-webkit-keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  50% {
+    opacity:  0.7;
+  }
+  100% {
+    opacity: 0;
+    
+  }
+}
+
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  50% {
+    opacity:  0.7;
+  }
+  100% {
+    opacity: 0;
+    
+  }
+}
+.box {
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes topFadeOut {
+  0% {
+    
+    top: 10%;
+    opacity: 0;
+  }
+
+  100% {
+    
+    top: 0;
+    opacity: 1;
+  }
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.main {
+
+
+ font-family: 'Gotu', sans-serif;
+}
+@keyframes slowpan {
+ 0% {
+    transform:scale(1);
+  }
+  
+  100% {
+    transform:scale(1.01);
+  }
+  
+}
+
+</style>
+    </div>
+    <section class="pb-20 bg-blue-900">
+      <div class="container mx-auto px-4 -mt-20">
+        <div class="flex flex-wrap">
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+            <div
+              class="h-64 relative flex flex-col min-w-0 break-words bg-white  mb-8 shadow-lg rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+              <div class="px-4 py-5 flex-auto">
+
+                <img src="18.png" class=" inline-flex items-center justify-center  h-12 mb-5  "></img>
+
+                <h6 class="text-xl font-semibold">
+                  <a href="#" class=" hover:text-yellow-500">WHO ARE WE</a>
+                </h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  We are a non-profit organization called to transform lives of Palestinians through your kindness
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+            <div
+              class=" h-64 relative flex flex-col min-w-0 break-words bg-white  mb-8 shadow-lg rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+              <div class="px-4 py-5 flex-auto">
+                <img src="19.png" class=" inline-flex items-center justify-center  h-12 mb-5  "></img>
+                <h6 class="text-xl font-semibold">
+                  <a href="#" class=" hover:text-yellow-500">WHAT WE DO</a>
+                </h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  We reach the Middle East's most vulnerable people with health, education and economic development
+                  programs. In times of crisis, we provide humanitarian and emergency relief.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+            <div
+              class="h-64 relative flex flex-col min-w-0 break-words bg-white  mb-8 shadow-lg rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+              <div class="px-4 py-5 flex-auto">
+                <img src="20.png" class=" inline-flex items-center justify-center  h-12 mb-5  "></img>
+                <h6 class="text-xl font-semibold">
+                  <a href="#" class=" hover:text-yellow-500">WHY WE DO THAT</a>
+                </h6>
+                <p class="mt-2 mb-4 text-gray-600S">
+                  Palestine is screaming for your help. More than 100 Palestinians have been hurt and scores
+                  hospitalised in clashes overnight. Years of violence and economic blockade has left millions on the
+                  brink.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="relative py-20">
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px;">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+
+      <div class="container mx-auto">
+        <div class="flex flex-wrap items-center mb-8 ml-20 justify-center">
+          <div id="div3" class="w-80 px-4 mr-20 ml-2 opacity-0">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+              <img alt="..." src="pales3.jpg" class="h-80 w-auto align-middle rounded-t-lg" />
+              <blockquote class="relative p-8 mb-4">
+                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
+                  class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+                  <polygon points="-30,95 583,95 583,65" class="text-blue-500 fill-current"></polygon>
+                </svg>
+                <h4 class="text-xl font-bold text-white">
+                  your greatness is not what you have, it's what you give
+                </h4>
+                <p class="text-md font-light mt-2 text-white">
+                  we rise by lifting others
+                </p>
+              </blockquote>
+            </div>
+          </div>
+          <div id="div2" class="w-full md:w-5/12 px-4 mr-4 ml-28 overflow-hidden relative opacity-0">
+            <h3  class="text-5xl mb-14 font-semibold leading-normal">
+              Welcome LOCAL HERO!
+            </h3>
+
+            <p class="text-xl font-light leading-relaxed mt-0 mb-4 text-gray-700">
+              We are confident to confirm that all members in LOCAL HERO are professionals in the charity.It means that
+              human resources experience in the field with consultant, organization events for needy.
+
+            </p>
+            <p class="text-xl font-light leading-relaxed mt-4 mb-4 text-gray-700">
+              Our long – term working experience effectively brings us achievement.Our mission is to provide the great
+              result for clients on time. please send us & we will try our best to deal with issues.
+            </p>
+
+          </div>
+    
+        </div>
+        <div id="div1" class="flex flex-row items-center justify-center bg-gray-100 divide-x mb-8 mr-12 ml-12">
+          <div class="p-20 justify-center items-center flex flex-row"><p>families helped&nbsp;</p>
+            <h1 id="value1" class="font-black text-5xl ">100</h1></div>
+          <div class="p-20 justify-center items-center flex flex-row "><p>houses built&nbsp;</p>
+            <h1 id="value2" class="font-black text-5xl">100</h1></div>
+          <div class="p-20 justify-center items-center flex flex-row"><p>Complete Projects&nbsp;</p>
+            <h1 id="value3" class="font-black text-5xl">100</h1></div>
+          
+        </div>   
+              
+              
+              
+              
+              
+              <script>
+                var n = 0;
+                var element = document.getElementById("div1");
+                var titrewelcome = document.getElementById("div2");
+                var div2 = document.getElementById("div3");
+                var div3 = document.getElementById("boy4");
+                const tiltle1 = document.getElementById("bobobo");
+                const btn1 = document.getElementById("btn1");
+                const btn2 = document.getElementById("btn2");
+                const btns = document.getElementById("boy3");
+                function animate9(){
+                  setTimeout(animate10, 1000); 
+                  setTimeout(animate11, 2000); 
+                  setTimeout(animate12, 3000); 
+                  
+                }
+                function animate10(){                 
+                  tiltle1.classList.remove("opacity-0");
+                  tiltle1.classList.add("fadeout");
+                }
+                function animate11(){
+                 btn1.classList.remove("opacity-0");
+                 btn1.classList.add("fade-in-right");
+                 btn2.classList.remove("opacity-0");
+                 btn2.classList.add("fade-in-left");
+                }
+                function animate12(){
+                  btns.classList.remove("opacity-0");
+                  btns.classList.add("fade-in-top");
+                }
+
+
+                document.addEventListener('scroll', animate);
+                document.addEventListener('scroll', animate2);
+                document.addEventListener('scroll', animate3);
+                document.addEventListener('scroll', animate4);
+
+                function inView(item) {
+                             
+                                    var windowHeight = window.innerHeight;
+                          
+                                    var scrollY = window.scrollY || window.pageYOffset;
+                                    
+                                   
+                                    var scrollPosition = scrollY + windowHeight;
+                     
+                                    var elementPosition = item.getBoundingClientRect().top + scrollY + element.clientHeight;
+                                    
+                              
+                                    if (scrollPosition > elementPosition) {
+                                      return true;
+                                    }
+                                    
+                                    return false;
+                          }
+                function animateValue(obj, start, end, duration, ajout) {
+          let startTimestamp = null;
+          const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            obj.innerHTML = Math.floor(progress * (end - start) + start) + ajout;
+            if (progress < 1) {
+              window.requestAnimationFrame(step);
+            }
+          };
+          window.requestAnimationFrame(step);
+        }
+        const imagg = document.getElementById("imagess")
+        const obj = document.getElementById("value1");
+        const obj1 = document.getElementById("value2");
+        const obj2 = document.getElementById("value3");
+        const obj3 = document.getElementById("value4");
+        function animate() {
+               
+                    if (inView(element) && n ===0 ) {
+                      
+                          animateValue(obj, 0, 85580, 1000,"+");
+                          animateValue(obj1, 0, 183, 1000,"");
+                          animateValue(obj2, 0, 4900, 1000,"+");
+                          animateValue(obj3, 0, 2586, 1000,"");
+                          n++;
+                    }
+                    
+                  }
+                  function animate2(){
+                    if(inView(titrewelcome)){
+                      titrewelcome.classList.remove("opacity-0");
+                      titrewelcome.classList.add("fade-in-left");
+
+                    }
+                  }
+                  function animate4(){
+                    if(inView(div2)){
+                      div2.classList.remove("opacity-0");
+                   div2.classList.add("fade-in-right")};
+                  }
+                  function animate3(){
+                    if(inView(div3)){
+                    div3.classList.remove("opacity-0");
+                   div3.classList.add("fade-in-top")};
+                  }
+
+              </script>
+        <section class="text-gray-600 body-font bg-blue-100 shadow-lg rounded-lg mx-14">
+          <div class="container px-5 py-24 mx-auto">
+            <div id="boy4" class="text-center mb-20">
+              <h1  class="text-5xl  font-medium title-font text-gray-900  mb-8">Key Facts</h1>
+              <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">More than 50 years of
+                occupation and 13 years of blockade have made the lives of 2 million Palestinians living inside the Gaza
+                Strip unbearable.</p>
+              <div class="flex mt-6 justify-center">
+                <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+              </div>
+            </div>
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+              <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+
+                <img src="water.png" class=" inline-flex items-center justify-center  h-12 mb-5  "></img>
+
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">97% of ground water is undrinkable</h2>
+                  <p class="leading-relaxed text-base">90 million litres of untreated sewage is pumped out to sea.</p>
+                  <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+                <img src="refugee.png" class=" inline-flex items-center justify-center  h-12 mb-5  "></img>
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">7 out of 10 people in Gaza are refugees
+                  </h2>
+                  <p class="leading-relaxed text-base">Families who were forced to leave their villages in 1948.</p>
+                  <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+                <img src="electicity.png" class=" inline-flex items-center justify-center  h-12 mb-5  "></img>
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">2 hours of electricity daily</h2>
+                  <p class="leading-relaxed text-base">Every day, Gaza experiences up to 22 hours of power outage.</p>
+                  <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+                <img src="unnamed.png" class=" inline-flex items-center justify-center  h-12 mb-5  "></img>
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">75% of children traumatised by war</h2>
+                  <p class="leading-relaxed text-base">500,000 traumatised by war, occupation & blockade</p>
+                  <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="text-gray-600 body-font mt-10 ">
+          <div class="container px-5 pt-12 mx-auto bg-blue-900">
+
+            <div class="text-center mb-20">
+              <h1 class="text-5xl  font-medium title-font text-gray-400 mb-8">Our Priorities</h1>
+              <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-white">When you donate to LOCAL
+                HERO, your gift will go directly toward addressing top priorities in the Palestinian refugee program.
+                Donate today to help us make Palestinians life better </p>
+              <div class="flex mt-6 justify-center">
+                <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+              </div>
+
+              <div class="flex flex-wrap -m-4 p-6">
+                <div class="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                  <div class="bg-gray-100 p-6 rounded-lg shadow-lg h-full">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="2.jpg" alt="content">
+
+                    <h2 class="text-lg text-blue-500 font-medium title-font mb-4">Palestinian Refugee Camp</h2>
+                    <p class="leading-relaxed text-base">Most of our programs are based in Palestinian refugee camps,
+                      and many of our staff live in the camps themselves. to determine the most pressing issues and
+                      respond with long-term solutions.</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                  <div class="bg-gray-100 p-6 rounded-lg shadow-lg h-full">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="3.jpg" alt="content">
+
+                    <h2 class="text-lg text-blue-500 font-medium title-font mb-4">Upgrading Hospitals and </br> Clinics
+                    </h2>
+                    <p class="leading-relaxed text-base">With help from people like you, we build and upgrade clinics
+                      and hospitals, improving health care services for the poorest communities and people with
+                      disabilities.</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                  <div class="bg-gray-100 p-6 rounded-lg shadow-lg h-full">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="4.jpg" alt="content">
+
+                    <h2 class="text-lg text-blue-500 font-medium title-font mb-4">Psychosocial Support</h2>
+                    <p class="leading-relaxed text-base">Violence and poverty have created difficult
+                      conditions in Palestine .LOCAL HERO works to improve refugee mental health, from engaging youth in
+                      physical activity to giving them creative outlets.</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                  <div class="bg-gray-100 p-6 rounded-lg shadow-lg h-full">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="5.jpg" alt="content">
+
+                    <h2 class="text-lg text-blue-500 font-medium title-font mb-4">Access to Clean Water</h2>
+
+                    <p class="leading-relaxed text-base">The challenges to accessing clean water in Palestine are
+                      numerous. Palestinians face political and economic barriers to accessing the water they need for
+                      drinking, bathing, cooking and cleaning.</p>
+                  </div>
+                </div>
+                
+              </div>
+              <button 
+                class="font-semibold bg-transparent rounded-3xl border-blue-500 text-blue-500 border-2 mb-4 px-5 py-1 mt-2 text-lg hover:bg-white hover:border-white transition delay-150 duration-300 ease-in-out">Learn more!</button>
+            </div>
+        </section>
+           
+        <section class="text-gray-600 body-font pt-0">
+          <div class="container px-5 py-1 mx-auto flex flex-wrap">
+            <div class="lg:w-full mx-auto">
+              <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+                <img alt="gallery" class="  w-full object-cover h-full object-center block  absolute inset-0" src="zuina.jpg">
+                <div class=" relative z-10 w-full">
+                  <h2 class="font-bold text-5xl text-white pb-4 animate-pulse">How we made a</br> difference in 2020</h2>
+                  <button
+              class="bg-white text-blue-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 mt-2 text-2xl rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+              type="button" style="transition: all 0.15s ease 0s;">
+              find out more
+            </button>
+                  
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </section>
+        
+       
+      
+      </div>
+      
+    
+
+      
+     
+        
+      
+    
+    
+    
+
+    <section class="pt-5 pb-10 mt-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center text-center mb-15">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold animate-bounc">Here are our team</h2>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+         
+          <div class="w-1/3 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img alt="..." src="team-2-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Romina Hadid</h5>
+                
+                <div class="mt-6">
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-google"></i></button><button
+                    class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/3 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img alt="..." src="team-3-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Alexa Smith</h5>
+               
+                <div class="mt-6">
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-google"></i></button><button
+                    class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-twitter"></i></button><button
+                    class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/3  lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img alt="..." src="team-4-470x470.png" class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Jenna Kardi</h5>
+               
+                <div class="mt-6">
+                  <button
+                    class="bg-yellow-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-dribbble"></i></button><button
+                    class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-google"></i></button><button
+                    class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-twitter"></i></button><button
+                    class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+      
+  </main>
+  <footer class="relative  bg-blue-100 pt-8 pb-6">
+    <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 80px;">
+      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class=" fill-current text-blue-100 " points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+    <div class="container mx-auto px-4 bg-blue-100">
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4">
+          <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+          <h5 class="text-lg mt-0 mb-2 text-gray-700">
+            Find us on any of these platforms.
+          </h5>
+          <div class="mt-6">
+            <button
+              class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button">
+              <i class="flex fab fa-twitter"></i></button><button
+              class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button">
+              <i class="flex fab fa-facebook-square"></i></button><button
+              class="bg-white text-yellow-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button">
+              <i class="flex fab fa-dribbble"></i></button><button
+              class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button">
+              <i class="flex fab fa-github"></i>
+            </button>
+          </div>
+        </div>
+        <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
+                   >About Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
+                   >Blog</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
+                   >Github</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
+                   >Free Products</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full lg:w-4/12 px-4">
+              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                   >MIT
+                    License</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                   >Terms &amp; Conditions</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                   >Privacy Policy</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                   >Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-400" />
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-gray-600 font-semibold py-1">
+            EIDIA
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+  <script src="main.js"></script>
+</body>
+<script>
+  function toggleNavbar(collapseID) {
+    document.getElementById(collapseID).classList.toggle("hidden");
+    document.getElementById(collapseID).classList.toggle("block");
+  }
+</script>
+
+</html>
