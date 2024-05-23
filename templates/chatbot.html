@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask AI - Morocco Tourism</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbot.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Morocco!</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/new.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="http://127.0.0.1:5000/">Ask AI</a></li>
+                <li><a href="http://127.0.0.1:5500/Faq.html">FAQ</a></li>
+                <li><a href="forum.html">Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="chatbot">
+            <h2>Ask me anything about your trip.</h2>
+            <div class="chat-container">
+                <input type="text" placeholder="Type your question here" id="user-input">
+                <button id="ask-button">Ask</button>
+            </div>
+            <div id="chat-output"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Morocco Tourism Knowledge Base</p>
+    </footer>
+    <script>
+        document.getElementById('ask-button').addEventListener('click', async function() {
+            const userInput = document.getElementById('user-input').value;
+            console.log(userInput);
+            const response = await fetch('http://127.0.0.1:5000/ask', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ question: userInput })
+            });
+            
+            if (response.ok) {
+                const data = await response.json();
+                document.getElementById('chat-output').innerText = data.answer;
+            } else {
+                document.getElementById('chat-output').innerText = 'Error: ' + response.status;
+            }
+        });
+    </script>
+</body>
+</html>
